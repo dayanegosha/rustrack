@@ -6,6 +6,13 @@
 
 <p align="center"><em>Discover Russia step by step.</em></p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT license" />
+  <img src="https://img.shields.io/badge/Next.js-16-black.svg" alt="Next.js 16" />
+  <img src="https://img.shields.io/badge/NestJS-11-red.svg" alt="NestJS 11" />
+  <img src="https://img.shields.io/badge/PostGIS-spatial-blue.svg" alt="PostGIS" />
+</p>
+
 RusTrack is a travel-tracking PWA that turns exploring the country into a map you
 uncover as you go. The map of Russia starts hidden; each region you visit gets
 **revealed**, building a personal heatmap of where you've been. It pairs a

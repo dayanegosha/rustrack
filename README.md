@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/project-card.svg" alt="rustrack project card" width="100%" /></p>
+
 <p align="center">
   <img src="docs/logo.png" alt="RusTrack logo" width="110" />
 </p>

@@ -1,7 +1,4 @@
-/**
- * Russian pluralization: picks the correct form based on number.
- * forms: [one, few, many] e.g. ['следопыт', 'следопыта', 'следопытов']
- */
+/** forms: [one, few, many], e.g. ['следопыт', 'следопыта', 'следопытов']. */
 export function plural(n: number, forms: [string, string, string]): string {
   const abs = Math.abs(n) % 100;
   const lastDigit = abs % 10;

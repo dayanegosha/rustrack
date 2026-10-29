@@ -9,7 +9,6 @@ describe('PostsService', () => {
     const moduleRef = await Test.createTestingModule({
       providers: [
         PostsService,
-        // addComment / toggleLike don't touch the DB; a stub is enough here.
         { provide: DbService, useValue: { query: jest.fn() } },
       ],
     }).compile();

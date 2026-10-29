@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# .rustrack / frontend
 
-## Getting Started
+PWA на Next.js: карта путешествий, маршруты, сообщество и профиль. Карта работает через VK Maps / Mappable, интерфейс доступен на русском, английском и китайском языках.
 
-First, run the development server:
+## запуск
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Из `frontend`:
+
+```sh
+cp .env.local.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Заполните `.env.local`: адреса API и WebSocket, настройки VK ID и ключ `NEXT_PUBLIC_VK_MAPS_API_KEY`. API запускается отдельно из `backend`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Приложение работает на `http://localhost:3000`.
 
-## Learn More
+## проверка и сборка
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run lint
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Переменные `NEXT_PUBLIC_*` попадают в бандл при сборке. После смены ключа карт или адреса API нужно пересобрать приложение.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Настройка сервера описана в [`DEPLOY.md`](../DEPLOY.md).
 
-## Deploy on Vercel
+## лицензия
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](../LICENSE)

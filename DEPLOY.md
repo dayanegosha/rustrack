@@ -55,7 +55,7 @@ systemctl start redis-server
 
 ```bash
 cd /opt
-git clone https://github.com/YOUR_USERNAME/rustrack.git
+git clone https://github.com/dayanegosha/rustrack.git
 cd rustrack
 ```
 

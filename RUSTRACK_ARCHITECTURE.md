@@ -1,13 +1,8 @@
-# RusTrack — Full System Architecture & Implementation Guide
-> "Discover Russia step by step"
+# .rustrack / архитектура
 
-> **Note on the map layer.** This document is the original design blueprint and
-> uses **Mapbox GL** in its diagrams and code samples. The shipped
-> implementation instead renders maps with **VK Maps / Mappable**
-> (`js.api.mappable.world`, Yandex Maps JS API v3), configured via
-> `NEXT_PUBLIC_VK_MAPS_API_KEY`. Treat the map-specific snippets below as design
-> intent rather than the exact shipped code; everything else (PostGIS reveal
-> logic, API design, auth, PWA) matches the implementation.
+Исходный план архитектуры с примерами кода. Для запуска используйте [`README.md`](README.md), для настройки сервера — [`DEPLOY.md`](DEPLOY.md).
+
+В схемах и примерах ниже используется Mapbox GL. Приложение работает с VK Maps / Mappable (`js.api.mappable.world`, Yandex Maps JS API v3) и ключом `NEXT_PUBLIC_VK_MAPS_API_KEY`. Примеры описывают первоначальный проект; актуальная реализация находится в `backend/src` и `frontend/src`.
 
 ---
 
